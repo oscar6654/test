@@ -1,0 +1,23 @@
+<% if @error %>
+<%=@error%>
+<%end%>
+<form action="/articles" method="POST">
+  <ul>
+    <label for="article_title">Article Title</label>
+    <input type="text", id="article_title", name="article_title">
+  </ul>
+  <ul>
+    <label for="article_url">Article URL</label>
+    <input type="text", id="article_url", name="article_url">
+  </ul>
+  <ul>
+    <label for="article_description">Article Description</label>
+    <input type="textarea", id="article_description", name="article_description">
+  </ul>
+  <ul>
+    <input type="submit">
+  </ul>
+</form>
+<ul>
+  <a href="/">Back</a>
+</ul>

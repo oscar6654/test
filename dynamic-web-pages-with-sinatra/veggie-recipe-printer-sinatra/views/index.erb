@@ -1,0 +1,24 @@
+<!--  YOUR CODE HERE -->
+<!-- <!doctype HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Veggie Recipe Printer</title>
+</head>
+<body> -->
+  <h1><%= @name%></h1>
+  <% @ingredients.each do |ingredient|%>
+    <ul><%= ingredient%></ul>
+  <%end%>
+  <% @directions.each do |direction|%>
+    <li><%= direction%></li>
+  <%end%>
+  <% @reviews.each do |review|%>
+  <ul>
+    <li>Name :<%=review[:username]%></li>
+    <li>Rating :<%=review[:rating]%></li>
+    <li>Review :<%=review[:review]%></li>
+  </ul>
+  <%end%>
+<!-- </body>
+</html> -->
